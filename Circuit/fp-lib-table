@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name "113990105")(type "KiCad")(uri "${KIPRJMOD}/113990105")(options "")(descr ""))
+  (lib (name "19-C47_RSGHBHC-5V01_2T")(type "KiCad")(uri "${KIPRJMOD}/19-C47_RSGHBHC-5V01_2T")(options "")(descr ""))
+  (lib (name "footprints")(type "KiCad")(uri "${KIPRJMOD}/ul_BQ51013BRHLR/KiCAD/2023-03-08_19-51-43/footprints.pretty")(options "")(descr ""))
+)

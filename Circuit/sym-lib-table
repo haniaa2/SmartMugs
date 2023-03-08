@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name "ESP8266")(type "Legacy")(uri "${KIPRJMOD}/kicad-ESP8266/ESP8266.lib")(options "")(descr ""))
+  (lib (name "113990105")(type "KiCad")(uri "${KIPRJMOD}/113990105/113990105.kicad_sym")(options "")(descr ""))
+  (lib (name "19-C47_RSGHBHC-5V01_2T")(type "KiCad")(uri "${KIPRJMOD}/19-C47_RSGHBHC-5V01_2T/19-C47_RSGHBHC-5V01_2T.kicad_sym")(options "")(descr ""))
+  (lib (name "2023-03-08_19-51-43")(type "Legacy")(uri "${KIPRJMOD}/ul_BQ51013BRHLR/KiCAD/2023-03-08_19-51-43/2023-03-08_19-51-43.lib")(options "")(descr ""))
+)
