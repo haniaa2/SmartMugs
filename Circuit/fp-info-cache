@@ -1,4 +1,4 @@
-20905230488416223
+20911530325952813
 19-C47_RSGHBHC-5V01_2T
 LED_19-C47_RSGHBHC-5V01_2T
 
@@ -27,6 +27,13 @@ audio belton reverb
 0
 7
 7
+BAT760-7
+SOD2513X120N
+
+
+0
+2
+2
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -1401,8 +1408,8 @@ Light Touch Switch, https://industrial.panasonic.com/cdbs/www-data/pdf/ATK0000/A
 2
 Button_Switch_SMD
 SW_SPST_EVQP2
-Light Touch Switch, https://industrial.panasonic.com/cdbs/www-data/pdf/ATK0000/ATK0000C374.pdf
-SMD SMT SPST EVQP2
+Light Touch Switch
+
 0
 4
 2
@@ -1447,21 +1454,21 @@ Surface Mount Tactile Switch for High-Density Mounting, 3.1mm height, https://om
 Tactile Switch
 0
 4
-2
+4
 Button_Switch_SMD
 SW_SPST_Omron_B3FS-101xP
 Surface Mount Tactile Switch for High-Density Mounting, 4.3mm height, https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3fs.pdf
 Tactile Switch
 0
 4
-2
+4
 Button_Switch_SMD
 SW_SPST_Omron_B3FS-105xP
 Surface Mount Tactile Switch for High-Density Mounting, 7.3mm height, https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3fs.pdf
 Tactile Switch
 0
 4
-2
+4
 Button_Switch_SMD
 SW_SPST_PTS645
 C&K Components SPST SMD PTS645 Series 6mm Tact Switch
@@ -1566,13 +1573,6 @@ Low-profile SMD Tactile Switch, https://www.e-switch.com/system/asset/product_li
 SPST Tactile Switch
 0
 4
-2
-Button_Switch_SMD
-SW_Tactile_SPST_NO_Straight_CK_PTS636Sx25SMTRLFS
-Tactile switch, SPST, 6.0x3.5 mm, H2.5 mm, straight, NO, gull wing leads: https://www.ckswitches.com/media/2779/pts636.pdf
-switch tactile SPST 1P1T straight NO SMTR C&K
-0
-2
 2
 Button_Switch_THT
 KSA_Tactile_SPST
@@ -52499,6 +52499,13 @@ One digit LED 7 segment SA39-11 SC39-11 SA39-12 SC39-12
 0
 10
 10
+ESP32-WROVER-I
+XCVR_ESP32-WROVER-I
+
+
+0
+39
+39
 Ferrite_THT
 LairdTech_28C0236-0JW-10
 Ferrite, vertical, LairdTech 28C0236-0JW-10, https://assets.lairdtech.com/home/brandworld/files/28C0236-0JW-10.pdf, JW Miller core https://www.bourns.com/products/magnetic-products/j.w.-miller-through-hole-ferrite-beads-emi-filters
@@ -58600,6 +58607,13 @@ LED_THT
 LED_VCCLite_5381H7_6.35x6.35mm
 Yellow 5381 Series LED VCCLite https://vcclite.com/wp-content/uploads/wpallimport/files/files/5381Series.pdf http://static.vcclite.com/pdf/Mounting%20Hole%20Pattern%202.pdf
 Yellow 5381 Series LED
+0
+2
+2
+LESD5D5
+TVS_LESD5D5.0CT1G
+
+
 0
 2
 2
@@ -80408,6 +80422,13 @@ rotary encoder
 0
 7
 6
+SS8050-G
+TRANS_SS8050-G
+
+
+0
+3
+3
 Sensor
 Aosong_DHT11_5.5x12.0_P2.54mm
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/DHT11.pdf

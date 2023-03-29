@@ -3,4 +3,8 @@
   (lib (name "113990105")(type "KiCad")(uri "${KIPRJMOD}/113990105/113990105.kicad_sym")(options "")(descr ""))
   (lib (name "19-C47_RSGHBHC-5V01_2T")(type "KiCad")(uri "${KIPRJMOD}/19-C47_RSGHBHC-5V01_2T/19-C47_RSGHBHC-5V01_2T.kicad_sym")(options "")(descr ""))
   (lib (name "2023-03-08_19-51-43")(type "Legacy")(uri "${KIPRJMOD}/ul_BQ51013BRHLR/KiCAD/2023-03-08_19-51-43/2023-03-08_19-51-43.lib")(options "")(descr ""))
+  (lib (name "LESD5D5.0CT1G")(type "KiCad")(uri "${KIPRJMOD}/LESD5D5.0CT1G/LESD5D5.0CT1G.kicad_sym")(options "")(descr ""))
+  (lib (name "SS8050-G")(type "KiCad")(uri "${KIPRJMOD}/SS8050-G/SS8050-G.kicad_sym")(options "")(descr ""))
+  (lib (name "ESP32-WROVER-I")(type "KiCad")(uri "${KIPRJMOD}/ESP32-WROVER-I/ESP32-WROVER-I.kicad_sym")(options "")(descr ""))
+  (lib (name "TP4056-18650")(type "KiCad")(uri "${KIPRJMOD}/TP4056-18650-symbol/TP4056-18650.kicad_sym")(options "")(descr ""))
 )
