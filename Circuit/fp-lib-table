@@ -7,4 +7,6 @@
   (lib (name "Button_Switch_SMD")(type "KiCad")(uri "${KIPRJMOD}/Button_Switch_SMD/Button_Switch_SMD.pretty")(options "")(descr ""))
   (lib (name "ESP32-WROVER-I")(type "KiCad")(uri "${KIPRJMOD}/ESP32-WROVER-I")(options "")(descr ""))
   (lib (name "BAT760-7")(type "KiCad")(uri "${KIPRJMOD}/BAT760-7")(options "")(descr ""))
+  (lib (name "TP4056-18650")(type "KiCad")(uri "${KIPRJMOD}/TP4056-18650")(options "")(descr ""))
+  (lib (name "LTST-C171KRKT")(type "KiCad")(uri "${KIPRJMOD}/LTST-C171KRKT")(options "")(descr ""))
 )

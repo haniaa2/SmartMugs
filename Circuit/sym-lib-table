@@ -7,4 +7,5 @@
   (lib (name "SS8050-G")(type "KiCad")(uri "${KIPRJMOD}/SS8050-G/SS8050-G.kicad_sym")(options "")(descr ""))
   (lib (name "ESP32-WROVER-I")(type "KiCad")(uri "${KIPRJMOD}/ESP32-WROVER-I/ESP32-WROVER-I.kicad_sym")(options "")(descr ""))
   (lib (name "TP4056-18650")(type "KiCad")(uri "${KIPRJMOD}/TP4056-18650-symbol/TP4056-18650.kicad_sym")(options "")(descr ""))
+  (lib (name "LTST-C171KRKT")(type "KiCad")(uri "${KIPRJMOD}/LTST-C171KRKT/LTST-C171KRKT.kicad_sym")(options "")(descr ""))
 )
