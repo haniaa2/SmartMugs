@@ -1,7 +1,5 @@
 # Hani's Worklog
 
-[[_TOC_]] 
-
 # Week 2/6  
 - Researched the power subsystem of commercially available products (the Ember Mug primarily).   
 - 02/09/2023: Finalized Project Proposal.
