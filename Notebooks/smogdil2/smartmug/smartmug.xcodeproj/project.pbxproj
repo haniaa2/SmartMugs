@@ -1,0 +1,750 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		15CD345E4A6C33234623530F /* Pods_smartmug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60D7409334E8D195C87FAC5 /* Pods_smartmug.framework */; };
+		4A285A46834887840BEB4FDF /* Pods_smartmugTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63D2A91418862DFB13EBABFB /* Pods_smartmugTests.framework */; };
+		E626A4E65421937C90F8046C /* Pods_smartmug_smartmugUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E0DE35B348907D7C9BD1D98 /* Pods_smartmug_smartmugUITests.framework */; };
+		EFFB7A2529DBB06A00843BEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFB7A2429DBB06A00843BEA /* AppDelegate.swift */; };
+		EFFB7A2729DBB06A00843BEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFB7A2629DBB06A00843BEA /* SceneDelegate.swift */; };
+		EFFB7A2929DBB06A00843BEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFB7A2829DBB06A00843BEA /* ViewController.swift */; };
+		EFFB7A2C29DBB06A00843BEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFFB7A2A29DBB06A00843BEA /* Main.storyboard */; };
+		EFFB7A2E29DBB06B00843BEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFFB7A2D29DBB06B00843BEA /* Assets.xcassets */; };
+		EFFB7A3129DBB06B00843BEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFFB7A2F29DBB06B00843BEA /* LaunchScreen.storyboard */; };
+		EFFB7A3C29DBB06B00843BEA /* smartmugTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFB7A3B29DBB06B00843BEA /* smartmugTests.swift */; };
+		EFFB7A4729DBB06B00843BEA /* smartmugUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFB7A4629DBB06B00843BEA /* smartmugUITests.swift */; };
+		EFFB7A5729DCE94500843BEA /* CircularSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFFB7A5629DCE94500843BEA /* CircularSliderViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EFFB7A3829DBB06B00843BEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFFB7A1929DBB06A00843BEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFFB7A2029DBB06A00843BEA;
+			remoteInfo = smartmug;
+		};
+		EFFB7A4329DBB06B00843BEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFFB7A1929DBB06A00843BEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFFB7A2029DBB06A00843BEA;
+			remoteInfo = smartmug;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1E0DE35B348907D7C9BD1D98 /* Pods_smartmug_smartmugUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smartmug_smartmugUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		311F63962B1F4451C69ADBF2 /* Pods-smartmug-smartmugUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartmug-smartmugUITests.debug.xcconfig"; path = "Target Support Files/Pods-smartmug-smartmugUITests/Pods-smartmug-smartmugUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		474FB030B9D67CEE5F2E436C /* Pods-smartmugTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartmugTests.debug.xcconfig"; path = "Target Support Files/Pods-smartmugTests/Pods-smartmugTests.debug.xcconfig"; sourceTree = "<group>"; };
+		63D2A91418862DFB13EBABFB /* Pods_smartmugTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smartmugTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B742AB23F600537BF77B4CF /* Pods-smartmug.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartmug.debug.xcconfig"; path = "Target Support Files/Pods-smartmug/Pods-smartmug.debug.xcconfig"; sourceTree = "<group>"; };
+		9FEC370D04601DC2ABD6D766 /* Pods-smartmug-smartmugUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartmug-smartmugUITests.release.xcconfig"; path = "Target Support Files/Pods-smartmug-smartmugUITests/Pods-smartmug-smartmugUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BA85B45A68C06756E0DB4C70 /* Pods-smartmug.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartmug.release.xcconfig"; path = "Target Support Files/Pods-smartmug/Pods-smartmug.release.xcconfig"; sourceTree = "<group>"; };
+		D60D7409334E8D195C87FAC5 /* Pods_smartmug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_smartmug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFFB7A2129DBB06A00843BEA /* smartmug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smartmug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFFB7A2429DBB06A00843BEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EFFB7A2629DBB06A00843BEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EFFB7A2829DBB06A00843BEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EFFB7A2B29DBB06A00843BEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EFFB7A2D29DBB06B00843BEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EFFB7A3029DBB06B00843BEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EFFB7A3229DBB06B00843BEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFFB7A3729DBB06B00843BEA /* smartmugTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smartmugTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFFB7A3B29DBB06B00843BEA /* smartmugTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smartmugTests.swift; sourceTree = "<group>"; };
+		EFFB7A3D29DBB06B00843BEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFFB7A4229DBB06B00843BEA /* smartmugUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = smartmugUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFFB7A4629DBB06B00843BEA /* smartmugUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = smartmugUITests.swift; sourceTree = "<group>"; };
+		EFFB7A4829DBB06B00843BEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFFB7A5629DCE94500843BEA /* CircularSliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularSliderViewController.swift; sourceTree = "<group>"; };
+		FDB314A63CC857C5E4C34B65 /* Pods-smartmugTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-smartmugTests.release.xcconfig"; path = "Target Support Files/Pods-smartmugTests/Pods-smartmugTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EFFB7A1E29DBB06A00843BEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15CD345E4A6C33234623530F /* Pods_smartmug.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFFB7A3429DBB06B00843BEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A285A46834887840BEB4FDF /* Pods_smartmugTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFFB7A3F29DBB06B00843BEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E626A4E65421937C90F8046C /* Pods_smartmug_smartmugUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		73E9124C7AB48DBC95968485 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B742AB23F600537BF77B4CF /* Pods-smartmug.debug.xcconfig */,
+				BA85B45A68C06756E0DB4C70 /* Pods-smartmug.release.xcconfig */,
+				311F63962B1F4451C69ADBF2 /* Pods-smartmug-smartmugUITests.debug.xcconfig */,
+				9FEC370D04601DC2ABD6D766 /* Pods-smartmug-smartmugUITests.release.xcconfig */,
+				474FB030B9D67CEE5F2E436C /* Pods-smartmugTests.debug.xcconfig */,
+				FDB314A63CC857C5E4C34B65 /* Pods-smartmugTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A6A7DBF80C6A8FD12DB51868 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D60D7409334E8D195C87FAC5 /* Pods_smartmug.framework */,
+				1E0DE35B348907D7C9BD1D98 /* Pods_smartmug_smartmugUITests.framework */,
+				63D2A91418862DFB13EBABFB /* Pods_smartmugTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFFB7A1829DBB06A00843BEA = {
+			isa = PBXGroup;
+			children = (
+				EFFB7A2329DBB06A00843BEA /* smartmug */,
+				EFFB7A3A29DBB06B00843BEA /* smartmugTests */,
+				EFFB7A4529DBB06B00843BEA /* smartmugUITests */,
+				EFFB7A2229DBB06A00843BEA /* Products */,
+				73E9124C7AB48DBC95968485 /* Pods */,
+				A6A7DBF80C6A8FD12DB51868 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EFFB7A2229DBB06A00843BEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EFFB7A2129DBB06A00843BEA /* smartmug.app */,
+				EFFB7A3729DBB06B00843BEA /* smartmugTests.xctest */,
+				EFFB7A4229DBB06B00843BEA /* smartmugUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EFFB7A2329DBB06A00843BEA /* smartmug */ = {
+			isa = PBXGroup;
+			children = (
+				EFFB7A2429DBB06A00843BEA /* AppDelegate.swift */,
+				EFFB7A2629DBB06A00843BEA /* SceneDelegate.swift */,
+				EFFB7A2829DBB06A00843BEA /* ViewController.swift */,
+				EFFB7A2A29DBB06A00843BEA /* Main.storyboard */,
+				EFFB7A2D29DBB06B00843BEA /* Assets.xcassets */,
+				EFFB7A2F29DBB06B00843BEA /* LaunchScreen.storyboard */,
+				EFFB7A5629DCE94500843BEA /* CircularSliderViewController.swift */,
+				EFFB7A3229DBB06B00843BEA /* Info.plist */,
+			);
+			path = smartmug;
+			sourceTree = "<group>";
+		};
+		EFFB7A3A29DBB06B00843BEA /* smartmugTests */ = {
+			isa = PBXGroup;
+			children = (
+				EFFB7A3B29DBB06B00843BEA /* smartmugTests.swift */,
+				EFFB7A3D29DBB06B00843BEA /* Info.plist */,
+			);
+			path = smartmugTests;
+			sourceTree = "<group>";
+		};
+		EFFB7A4529DBB06B00843BEA /* smartmugUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EFFB7A4629DBB06B00843BEA /* smartmugUITests.swift */,
+				EFFB7A4829DBB06B00843BEA /* Info.plist */,
+			);
+			path = smartmugUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFFB7A2029DBB06A00843BEA /* smartmug */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFFB7A4B29DBB06B00843BEA /* Build configuration list for PBXNativeTarget "smartmug" */;
+			buildPhases = (
+				CE84E977DC7E65A43CA6211B /* [CP] Check Pods Manifest.lock */,
+				EFFB7A1D29DBB06A00843BEA /* Sources */,
+				EFFB7A1E29DBB06A00843BEA /* Frameworks */,
+				EFFB7A1F29DBB06A00843BEA /* Resources */,
+				853CCCB887E862D159DDE524 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = smartmug;
+			productName = smartmug;
+			productReference = EFFB7A2129DBB06A00843BEA /* smartmug.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EFFB7A3629DBB06B00843BEA /* smartmugTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFFB7A4E29DBB06B00843BEA /* Build configuration list for PBXNativeTarget "smartmugTests" */;
+			buildPhases = (
+				5C10F508D5DD22CD08002E21 /* [CP] Check Pods Manifest.lock */,
+				EFFB7A3329DBB06B00843BEA /* Sources */,
+				EFFB7A3429DBB06B00843BEA /* Frameworks */,
+				EFFB7A3529DBB06B00843BEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFFB7A3929DBB06B00843BEA /* PBXTargetDependency */,
+			);
+			name = smartmugTests;
+			productName = smartmugTests;
+			productReference = EFFB7A3729DBB06B00843BEA /* smartmugTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EFFB7A4129DBB06B00843BEA /* smartmugUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFFB7A5129DBB06B00843BEA /* Build configuration list for PBXNativeTarget "smartmugUITests" */;
+			buildPhases = (
+				294157D489C9B2B349383765 /* [CP] Check Pods Manifest.lock */,
+				EFFB7A3E29DBB06B00843BEA /* Sources */,
+				EFFB7A3F29DBB06B00843BEA /* Frameworks */,
+				EFFB7A4029DBB06B00843BEA /* Resources */,
+				0CA8ED6C6C5457567CEDAD61 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFFB7A4429DBB06B00843BEA /* PBXTargetDependency */,
+			);
+			name = smartmugUITests;
+			productName = smartmugUITests;
+			productReference = EFFB7A4229DBB06B00843BEA /* smartmugUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EFFB7A1929DBB06A00843BEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					EFFB7A2029DBB06A00843BEA = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					EFFB7A3629DBB06B00843BEA = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = EFFB7A2029DBB06A00843BEA;
+					};
+					EFFB7A4129DBB06B00843BEA = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = EFFB7A2029DBB06A00843BEA;
+					};
+				};
+			};
+			buildConfigurationList = EFFB7A1C29DBB06A00843BEA /* Build configuration list for PBXProject "smartmug" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EFFB7A1829DBB06A00843BEA;
+			productRefGroup = EFFB7A2229DBB06A00843BEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFFB7A2029DBB06A00843BEA /* smartmug */,
+				EFFB7A3629DBB06B00843BEA /* smartmugTests */,
+				EFFB7A4129DBB06B00843BEA /* smartmugUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EFFB7A1F29DBB06A00843BEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFFB7A3129DBB06B00843BEA /* LaunchScreen.storyboard in Resources */,
+				EFFB7A2E29DBB06B00843BEA /* Assets.xcassets in Resources */,
+				EFFB7A2C29DBB06A00843BEA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFFB7A3529DBB06B00843BEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFFB7A4029DBB06B00843BEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CA8ED6C6C5457567CEDAD61 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-smartmug-smartmugUITests/Pods-smartmug-smartmugUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-smartmug-smartmugUITests/Pods-smartmug-smartmugUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-smartmug-smartmugUITests/Pods-smartmug-smartmugUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		294157D489C9B2B349383765 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-smartmug-smartmugUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C10F508D5DD22CD08002E21 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-smartmugTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		853CCCB887E862D159DDE524 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-smartmug/Pods-smartmug-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-smartmug/Pods-smartmug-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-smartmug/Pods-smartmug-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE84E977DC7E65A43CA6211B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-smartmug-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EFFB7A1D29DBB06A00843BEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFFB7A2929DBB06A00843BEA /* ViewController.swift in Sources */,
+				EFFB7A2529DBB06A00843BEA /* AppDelegate.swift in Sources */,
+				EFFB7A2729DBB06A00843BEA /* SceneDelegate.swift in Sources */,
+				EFFB7A5729DCE94500843BEA /* CircularSliderViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFFB7A3329DBB06B00843BEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFFB7A3C29DBB06B00843BEA /* smartmugTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFFB7A3E29DBB06B00843BEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFFB7A4729DBB06B00843BEA /* smartmugUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EFFB7A3929DBB06B00843BEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFFB7A2029DBB06A00843BEA /* smartmug */;
+			targetProxy = EFFB7A3829DBB06B00843BEA /* PBXContainerItemProxy */;
+		};
+		EFFB7A4429DBB06B00843BEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFFB7A2029DBB06A00843BEA /* smartmug */;
+			targetProxy = EFFB7A4329DBB06B00843BEA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EFFB7A2A29DBB06A00843BEA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFFB7A2B29DBB06A00843BEA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EFFB7A2F29DBB06B00843BEA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EFFB7A3029DBB06B00843BEA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EFFB7A4929DBB06B00843BEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EFFB7A4A29DBB06B00843BEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFFB7A4C29DBB06B00843BEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B742AB23F600537BF77B4CF /* Pods-smartmug.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = smartmug/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = seniordesign.smartmug;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EFFB7A4D29DBB06B00843BEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA85B45A68C06756E0DB4C70 /* Pods-smartmug.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = smartmug/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = seniordesign.smartmug;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EFFB7A4F29DBB06B00843BEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 474FB030B9D67CEE5F2E436C /* Pods-smartmugTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = smartmugTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = seniordesign.smartmugTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/smartmug.app/smartmug";
+			};
+			name = Debug;
+		};
+		EFFB7A5029DBB06B00843BEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDB314A63CC857C5E4C34B65 /* Pods-smartmugTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = smartmugTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = seniordesign.smartmugTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/smartmug.app/smartmug";
+			};
+			name = Release;
+		};
+		EFFB7A5229DBB06B00843BEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 311F63962B1F4451C69ADBF2 /* Pods-smartmug-smartmugUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = smartmugUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = seniordesign.smartmugUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = smartmug;
+			};
+			name = Debug;
+		};
+		EFFB7A5329DBB06B00843BEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FEC370D04601DC2ABD6D766 /* Pods-smartmug-smartmugUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = smartmugUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = seniordesign.smartmugUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = smartmug;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EFFB7A1C29DBB06A00843BEA /* Build configuration list for PBXProject "smartmug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFFB7A4929DBB06B00843BEA /* Debug */,
+				EFFB7A4A29DBB06B00843BEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFFB7A4B29DBB06B00843BEA /* Build configuration list for PBXNativeTarget "smartmug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFFB7A4C29DBB06B00843BEA /* Debug */,
+				EFFB7A4D29DBB06B00843BEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFFB7A4E29DBB06B00843BEA /* Build configuration list for PBXNativeTarget "smartmugTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFFB7A4F29DBB06B00843BEA /* Debug */,
+				EFFB7A5029DBB06B00843BEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFFB7A5129DBB06B00843BEA /* Build configuration list for PBXNativeTarget "smartmugUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFFB7A5229DBB06B00843BEA /* Debug */,
+				EFFB7A5329DBB06B00843BEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EFFB7A1929DBB06A00843BEA /* Project object */;
+}

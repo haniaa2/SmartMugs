@@ -1,0 +1,988 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01EF2A69B23F98BC03834222327464B7 /* MSCircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA618CF7BF0C4E8BA80848EBBF32CAF9 /* MSCircularSlider.swift */; };
+		027EEA8FAAC5AE6080F0AFFB9946FEA1 /* Pods-smartmugTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 92F0B833D276BC1B1881CD3DB868F7EF /* Pods-smartmugTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AA2887895072263C707496DAE845E13 /* MSDoubleHandleCircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9476C711FDBAF8212C2AE439E6C86BFD /* MSDoubleHandleCircularSlider.swift */; };
+		3ED0DC3F09F5BD0559A484BD712FC2A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		4090DB392D5E836359D2CA9FD75631F5 /* Pods-smartmug-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA6F9048428FFA0B0775E559F3AE73F /* Pods-smartmug-dummy.m */; };
+		40EDA2D143D3D7ADC1F50C55E952BB65 /* MSCircularSlider-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B0D306DC0D71F071A5DD236117137D80 /* MSCircularSlider-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D02D61B04E334623D9E6509FE6C2E03 /* Pods-smartmugTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27204F5E490B8E6D6FDC0D26E6DEC534 /* Pods-smartmugTests-dummy.m */; };
+		62E57F1EC3DFE24F7DFE31BF45129A8F /* MSDoubleHandleCircularSlider+IB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7052B8222ECAA9A5010E60AEF24613F3 /* MSDoubleHandleCircularSlider+IB.swift */; };
+		640D7EEEC176546197B84F15560D7599 /* MSCircularSliderHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59849F2F0F3C17F260CDC310CE7AD87 /* MSCircularSliderHandle.swift */; };
+		6E3A892C09F8C9668B3BA1FD79C51E2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		7725064A1061DC3EE2B354312AB1C4B4 /* Pods-smartmug-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B5C9A2D97B88AA769B94AC79094364C7 /* Pods-smartmug-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8202E727A037E6516FB2540B2918367C /* MSGradientCircularSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAF11B6204DC0FF26CBEAB1955A2F73 /* MSGradientCircularSlider.swift */; };
+		85523722632FC65D9F5AA4FFB80267DF /* MSGradientCircularSlider+IB.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6540B2F9390A7CAC293027659201FAC /* MSGradientCircularSlider+IB.swift */; };
+		A1BA3767AB4CCF967393B3509EFC8825 /* Pods-smartmug-smartmugUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6C6E5ED35A42399F778152629BEB04 /* Pods-smartmug-smartmugUITests-dummy.m */; };
+		A61BFB2487FE915C0E41757DEE66AD41 /* Pods-smartmug-smartmugUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B77A8F91DC76169F1D6841ACE2E20A4 /* Pods-smartmug-smartmugUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC6A8E3493077C9A0F9CE69D90C3ACA1 /* MSCircularSlider-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E576FC6E194A956A7A5C4CC22FCCF01 /* MSCircularSlider-dummy.m */; };
+		CCEF375F316CA9EDDD6C0E8D5B06A3E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		DF7A745AC2241A5C7B84B669A71B55D2 /* MSCircularSlider+IB.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5DA19605CB73053DF57956BF13551A /* MSCircularSlider+IB.swift */; };
+		FCB5E6C3D7045BD884BC42B81AA2A48F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7D9CA6B80EC95FA13BFB99371EBC8A3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71D6D237C39E9596D0A1124BEB39F435;
+			remoteInfo = "Pods-smartmug";
+		};
+		7E64133AB46883F3DF9623D1AE42B053 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D503D860BBEBF5895CAEB10D66E1BDB0;
+			remoteInfo = MSCircularSlider;
+		};
+		88EA9344AC195E1A65C8D977773C0C41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D503D860BBEBF5895CAEB10D66E1BDB0;
+			remoteInfo = MSCircularSlider;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02FDD8ED63F9E4FA04B0EC262C75DB15 /* MSCircularSlider.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MSCircularSlider.modulemap; sourceTree = "<group>"; };
+		047495B5EBE69DC701917010E837EC5A /* Pods-smartmug-smartmugUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-smartmug-smartmugUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0D6C6E5ED35A42399F778152629BEB04 /* Pods-smartmug-smartmugUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-smartmug-smartmugUITests-dummy.m"; sourceTree = "<group>"; };
+		1A4C02118011D6A145DB49A3CFE5B4D5 /* Pods-smartmug-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-smartmug-acknowledgements.plist"; sourceTree = "<group>"; };
+		1B77A8F91DC76169F1D6841ACE2E20A4 /* Pods-smartmug-smartmugUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-smartmug-smartmugUITests-umbrella.h"; sourceTree = "<group>"; };
+		1C35C289B2206E9C7FACB6425C9EF289 /* Pods-smartmug-smartmugUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-smartmug-smartmugUITests-frameworks.sh"; sourceTree = "<group>"; };
+		1ECB5F3E5410497871579CB3D595B229 /* Pods-smartmug-smartmugUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-smartmug-smartmugUITests-Info.plist"; sourceTree = "<group>"; };
+		1FC5454D35942C53CA5431977527231B /* MSCircularSlider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MSCircularSlider.debug.xcconfig; sourceTree = "<group>"; };
+		27204F5E490B8E6D6FDC0D26E6DEC534 /* Pods-smartmugTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-smartmugTests-dummy.m"; sourceTree = "<group>"; };
+		2C2793194E2F9AAD1D0F9C558D3E53D2 /* Pods-smartmugTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-smartmugTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3B25669B08071AF8D926E5F6DE895C71 /* Pods-smartmug-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-smartmug-acknowledgements.markdown"; sourceTree = "<group>"; };
+		49EA4C8A4DE4C789AA192362B98BBD4F /* Pods-smartmug.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-smartmug.release.xcconfig"; sourceTree = "<group>"; };
+		5A13FE7863A46AC85C7ED6AE5E57C69A /* Pods-smartmugTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-smartmugTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5E576FC6E194A956A7A5C4CC22FCCF01 /* MSCircularSlider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MSCircularSlider-dummy.m"; sourceTree = "<group>"; };
+		666DBE055D5A74C3DF4641A728B7628B /* Pods-smartmug-smartmugUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-smartmug-smartmugUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6CE9BD4A41286E120EF18081509F6FAE /* Pods-smartmug.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-smartmug.debug.xcconfig"; sourceTree = "<group>"; };
+		7052B8222ECAA9A5010E60AEF24613F3 /* MSDoubleHandleCircularSlider+IB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MSDoubleHandleCircularSlider+IB.swift"; path = "MSCircularSlider/MSDoubleHandleCircularSlider+IB.swift"; sourceTree = "<group>"; };
+		718AE04F5B98BA9E37FD5F16EA76E397 /* Pods-smartmug-smartmugUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-smartmug-smartmugUITests"; path = Pods_smartmug_smartmugUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		793480A96CF2745A2A03A8301C9F0E6A /* Pods-smartmug.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-smartmug.modulemap"; sourceTree = "<group>"; };
+		798BC891EABC2E163531F8C782EC16B1 /* Pods-smartmug-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-smartmug-frameworks.sh"; sourceTree = "<group>"; };
+		7BFBC7EA648BE7EDFAE2CE96BEF31F0F /* Pods-smartmug-smartmugUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-smartmug-smartmugUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7E51740ADD343FCE271A0DCEED90CCE5 /* MSCircularSlider-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MSCircularSlider-Info.plist"; sourceTree = "<group>"; };
+		8FA6F9048428FFA0B0775E559F3AE73F /* Pods-smartmug-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-smartmug-dummy.m"; sourceTree = "<group>"; };
+		92F0B833D276BC1B1881CD3DB868F7EF /* Pods-smartmugTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-smartmugTests-umbrella.h"; sourceTree = "<group>"; };
+		9476C711FDBAF8212C2AE439E6C86BFD /* MSDoubleHandleCircularSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MSDoubleHandleCircularSlider.swift; path = MSCircularSlider/MSDoubleHandleCircularSlider.swift; sourceTree = "<group>"; };
+		951B90E27A7256BC2AB8DBE896F2E04E /* MSCircularSlider-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MSCircularSlider-prefix.pch"; sourceTree = "<group>"; };
+		9D418302930695FB44CCFA758F51FF88 /* Pods-smartmugTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-smartmugTests-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E6FB4C03A991A44AE41099889F454E4 /* Pods-smartmug-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-smartmug-Info.plist"; sourceTree = "<group>"; };
+		A1F9CCBFDA70214CC42355DA856951EC /* MSCircularSlider */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MSCircularSlider; path = MSCircularSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADA57EB975427AF31983EDAC1D009EAB /* Pods-smartmugTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-smartmugTests.release.xcconfig"; sourceTree = "<group>"; };
+		B0D306DC0D71F071A5DD236117137D80 /* MSCircularSlider-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MSCircularSlider-umbrella.h"; sourceTree = "<group>"; };
+		B5C9A2D97B88AA769B94AC79094364C7 /* Pods-smartmug-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-smartmug-umbrella.h"; sourceTree = "<group>"; };
+		BA618CF7BF0C4E8BA80848EBBF32CAF9 /* MSCircularSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MSCircularSlider.swift; path = MSCircularSlider/MSCircularSlider.swift; sourceTree = "<group>"; };
+		BCFA78913290A1A179ADBE4BB4B68036 /* Pods-smartmugTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-smartmugTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D6540B2F9390A7CAC293027659201FAC /* MSGradientCircularSlider+IB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MSGradientCircularSlider+IB.swift"; path = "MSCircularSlider/MSGradientCircularSlider+IB.swift"; sourceTree = "<group>"; };
+		D7D5940393A7894ADEE96E365976E170 /* Pods-smartmugTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-smartmugTests.modulemap"; sourceTree = "<group>"; };
+		E59849F2F0F3C17F260CDC310CE7AD87 /* MSCircularSliderHandle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MSCircularSliderHandle.swift; path = MSCircularSlider/MSCircularSliderHandle.swift; sourceTree = "<group>"; };
+		E8F43F1C6EBCAE8877FB8D2022036A4A /* Pods-smartmug-smartmugUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-smartmug-smartmugUITests.modulemap"; sourceTree = "<group>"; };
+		EB79FA63F2DBB6DD3788606E4BDB7C79 /* Pods-smartmugTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-smartmugTests"; path = Pods_smartmugTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE5DA19605CB73053DF57956BF13551A /* MSCircularSlider+IB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MSCircularSlider+IB.swift"; path = "MSCircularSlider/MSCircularSlider+IB.swift"; sourceTree = "<group>"; };
+		EE71EDD5F6D9213152713DDF7FF344D0 /* MSCircularSlider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MSCircularSlider.release.xcconfig; sourceTree = "<group>"; };
+		EF44F0D9662D23A646E9CB69FE330D63 /* Pods-smartmug */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-smartmug"; path = Pods_smartmug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEAF11B6204DC0FF26CBEAB1955A2F73 /* MSGradientCircularSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MSGradientCircularSlider.swift; path = MSCircularSlider/MSGradientCircularSlider.swift; sourceTree = "<group>"; };
+		FFDE2384F8633C6C4BA292B5E3611767 /* Pods-smartmug-smartmugUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-smartmug-smartmugUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E52E39FD5C7DDD3CEA544BC1332EEDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCEF375F316CA9EDDD6C0E8D5B06A3E2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E6B265A18813A80ABA7C889452A22E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCB5E6C3D7045BD884BC42B81AA2A48F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D29D5CB3514BCA16301E3B4991700AA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E3A892C09F8C9668B3BA1FD79C51E2E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2BC61A06E6A7BDD2D1145AFE5C68CD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ED0DC3F09F5BD0559A484BD712FC2A4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0086FE1D335C45B4E10E027C4676B27A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15FC191473B187C0C3D6F0A79F8EEBFF /* MSCircularSlider */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		15FC191473B187C0C3D6F0A79F8EEBFF /* MSCircularSlider */ = {
+			isa = PBXGroup;
+			children = (
+				BA618CF7BF0C4E8BA80848EBBF32CAF9 /* MSCircularSlider.swift */,
+				EE5DA19605CB73053DF57956BF13551A /* MSCircularSlider+IB.swift */,
+				E59849F2F0F3C17F260CDC310CE7AD87 /* MSCircularSliderHandle.swift */,
+				9476C711FDBAF8212C2AE439E6C86BFD /* MSDoubleHandleCircularSlider.swift */,
+				7052B8222ECAA9A5010E60AEF24613F3 /* MSDoubleHandleCircularSlider+IB.swift */,
+				FEAF11B6204DC0FF26CBEAB1955A2F73 /* MSGradientCircularSlider.swift */,
+				D6540B2F9390A7CAC293027659201FAC /* MSGradientCircularSlider+IB.swift */,
+				7C915818BB6E1F2F9841E660656406F6 /* Support Files */,
+			);
+			name = MSCircularSlider;
+			path = MSCircularSlider;
+			sourceTree = "<group>";
+		};
+		34916AC6BB94CCBB9D4680F45B4E8107 /* Pods-smartmug */ = {
+			isa = PBXGroup;
+			children = (
+				793480A96CF2745A2A03A8301C9F0E6A /* Pods-smartmug.modulemap */,
+				3B25669B08071AF8D926E5F6DE895C71 /* Pods-smartmug-acknowledgements.markdown */,
+				1A4C02118011D6A145DB49A3CFE5B4D5 /* Pods-smartmug-acknowledgements.plist */,
+				8FA6F9048428FFA0B0775E559F3AE73F /* Pods-smartmug-dummy.m */,
+				798BC891EABC2E163531F8C782EC16B1 /* Pods-smartmug-frameworks.sh */,
+				9E6FB4C03A991A44AE41099889F454E4 /* Pods-smartmug-Info.plist */,
+				B5C9A2D97B88AA769B94AC79094364C7 /* Pods-smartmug-umbrella.h */,
+				6CE9BD4A41286E120EF18081509F6FAE /* Pods-smartmug.debug.xcconfig */,
+				49EA4C8A4DE4C789AA192362B98BBD4F /* Pods-smartmug.release.xcconfig */,
+			);
+			name = "Pods-smartmug";
+			path = "Target Support Files/Pods-smartmug";
+			sourceTree = "<group>";
+		};
+		49605155953B66DDAD2B67485347D619 /* Pods-smartmugTests */ = {
+			isa = PBXGroup;
+			children = (
+				D7D5940393A7894ADEE96E365976E170 /* Pods-smartmugTests.modulemap */,
+				2C2793194E2F9AAD1D0F9C558D3E53D2 /* Pods-smartmugTests-acknowledgements.markdown */,
+				5A13FE7863A46AC85C7ED6AE5E57C69A /* Pods-smartmugTests-acknowledgements.plist */,
+				27204F5E490B8E6D6FDC0D26E6DEC534 /* Pods-smartmugTests-dummy.m */,
+				9D418302930695FB44CCFA758F51FF88 /* Pods-smartmugTests-Info.plist */,
+				92F0B833D276BC1B1881CD3DB868F7EF /* Pods-smartmugTests-umbrella.h */,
+				BCFA78913290A1A179ADBE4BB4B68036 /* Pods-smartmugTests.debug.xcconfig */,
+				ADA57EB975427AF31983EDAC1D009EAB /* Pods-smartmugTests.release.xcconfig */,
+			);
+			name = "Pods-smartmugTests";
+			path = "Target Support Files/Pods-smartmugTests";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7C1235D0BEEC3994E353A811E5BC58D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1F9CCBFDA70214CC42355DA856951EC /* MSCircularSlider */,
+				EF44F0D9662D23A646E9CB69FE330D63 /* Pods-smartmug */,
+				718AE04F5B98BA9E37FD5F16EA76E397 /* Pods-smartmug-smartmugUITests */,
+				EB79FA63F2DBB6DD3788606E4BDB7C79 /* Pods-smartmugTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C915818BB6E1F2F9841E660656406F6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				02FDD8ED63F9E4FA04B0EC262C75DB15 /* MSCircularSlider.modulemap */,
+				5E576FC6E194A956A7A5C4CC22FCCF01 /* MSCircularSlider-dummy.m */,
+				7E51740ADD343FCE271A0DCEED90CCE5 /* MSCircularSlider-Info.plist */,
+				951B90E27A7256BC2AB8DBE896F2E04E /* MSCircularSlider-prefix.pch */,
+				B0D306DC0D71F071A5DD236117137D80 /* MSCircularSlider-umbrella.h */,
+				1FC5454D35942C53CA5431977527231B /* MSCircularSlider.debug.xcconfig */,
+				EE71EDD5F6D9213152713DDF7FF344D0 /* MSCircularSlider.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MSCircularSlider";
+			sourceTree = "<group>";
+		};
+		8D4B82C0786AB6BDF8A9E056F3A83A9B /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				34916AC6BB94CCBB9D4680F45B4E8107 /* Pods-smartmug */,
+				A69D8513AA7FF8CF3FF2841F3F319470 /* Pods-smartmug-smartmugUITests */,
+				49605155953B66DDAD2B67485347D619 /* Pods-smartmugTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A69D8513AA7FF8CF3FF2841F3F319470 /* Pods-smartmug-smartmugUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E8F43F1C6EBCAE8877FB8D2022036A4A /* Pods-smartmug-smartmugUITests.modulemap */,
+				666DBE055D5A74C3DF4641A728B7628B /* Pods-smartmug-smartmugUITests-acknowledgements.markdown */,
+				FFDE2384F8633C6C4BA292B5E3611767 /* Pods-smartmug-smartmugUITests-acknowledgements.plist */,
+				0D6C6E5ED35A42399F778152629BEB04 /* Pods-smartmug-smartmugUITests-dummy.m */,
+				1C35C289B2206E9C7FACB6425C9EF289 /* Pods-smartmug-smartmugUITests-frameworks.sh */,
+				1ECB5F3E5410497871579CB3D595B229 /* Pods-smartmug-smartmugUITests-Info.plist */,
+				1B77A8F91DC76169F1D6841ACE2E20A4 /* Pods-smartmug-smartmugUITests-umbrella.h */,
+				047495B5EBE69DC701917010E837EC5A /* Pods-smartmug-smartmugUITests.debug.xcconfig */,
+				7BFBC7EA648BE7EDFAE2CE96BEF31F0F /* Pods-smartmug-smartmugUITests.release.xcconfig */,
+			);
+			name = "Pods-smartmug-smartmugUITests";
+			path = "Target Support Files/Pods-smartmug-smartmugUITests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				0086FE1D335C45B4E10E027C4676B27A /* Pods */,
+				7C1235D0BEEC3994E353A811E5BC58D8 /* Products */,
+				8D4B82C0786AB6BDF8A9E056F3A83A9B /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		82749EF54EED0143654525FF77EF1AF9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A61BFB2487FE915C0E41757DEE66AD41 /* Pods-smartmug-smartmugUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		972293450ABCDF05398769D1ADFC486E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				027EEA8FAAC5AE6080F0AFFB9946FEA1 /* Pods-smartmugTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D34C9AFA53FD284CD4508CC2AD3647BF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40EDA2D143D3D7ADC1F50C55E952BB65 /* MSCircularSlider-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC9FA05F2751211309F1D699CBC7146A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7725064A1061DC3EE2B354312AB1C4B4 /* Pods-smartmug-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0E3C90FA4BA3734C6858913FCD61B5E3 /* Pods-smartmug-smartmugUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A36E13FD50385CBCB072BAF6D3DB3C42 /* Build configuration list for PBXNativeTarget "Pods-smartmug-smartmugUITests" */;
+			buildPhases = (
+				82749EF54EED0143654525FF77EF1AF9 /* Headers */,
+				EE6BC5B4EA1B04DABD93485FA2D81858 /* Sources */,
+				D29D5CB3514BCA16301E3B4991700AA5 /* Frameworks */,
+				46DB3FCC232EA99FFA807AFE6F899E9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF985B528806DEBDF5DDF8037CA55AB5 /* PBXTargetDependency */,
+			);
+			name = "Pods-smartmug-smartmugUITests";
+			productName = Pods_smartmug_smartmugUITests;
+			productReference = 718AE04F5B98BA9E37FD5F16EA76E397 /* Pods-smartmug-smartmugUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		71D6D237C39E9596D0A1124BEB39F435 /* Pods-smartmug */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB021C18ADF5A629D33007E76E235881 /* Build configuration list for PBXNativeTarget "Pods-smartmug" */;
+			buildPhases = (
+				FC9FA05F2751211309F1D699CBC7146A /* Headers */,
+				A8E4B80EA5A4528024440C26F3AC64B2 /* Sources */,
+				2E52E39FD5C7DDD3CEA544BC1332EEDA /* Frameworks */,
+				C9ECEAF6243691E60A201F00321EA01C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1ECB4AE349DEF3ED633CDBD816F2AA22 /* PBXTargetDependency */,
+			);
+			name = "Pods-smartmug";
+			productName = Pods_smartmug;
+			productReference = EF44F0D9662D23A646E9CB69FE330D63 /* Pods-smartmug */;
+			productType = "com.apple.product-type.framework";
+		};
+		77112F34D4A19AD6B109B722F5530A85 /* Pods-smartmugTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B15FEB9BD33BA7DC9FF63CDD490F5E8B /* Build configuration list for PBXNativeTarget "Pods-smartmugTests" */;
+			buildPhases = (
+				972293450ABCDF05398769D1ADFC486E /* Headers */,
+				1A15738AB428A9957A6F8949AC0F9234 /* Sources */,
+				9E6B265A18813A80ABA7C889452A22E4 /* Frameworks */,
+				DF88B092E156FE04E1C5C909BD4689D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60E5479E7A7AA12FD8699824EF92D6C8 /* PBXTargetDependency */,
+			);
+			name = "Pods-smartmugTests";
+			productName = Pods_smartmugTests;
+			productReference = EB79FA63F2DBB6DD3788606E4BDB7C79 /* Pods-smartmugTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		D503D860BBEBF5895CAEB10D66E1BDB0 /* MSCircularSlider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82940DBA813DC0B653D4B2443ADEA609 /* Build configuration list for PBXNativeTarget "MSCircularSlider" */;
+			buildPhases = (
+				D34C9AFA53FD284CD4508CC2AD3647BF /* Headers */,
+				B1AF8A7CA07DB65D41DC2B08D7C76D8C /* Sources */,
+				E2BC61A06E6A7BDD2D1145AFE5C68CD9 /* Frameworks */,
+				C23454D689887EF79F5B6D3C0D427960 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MSCircularSlider;
+			productName = MSCircularSlider;
+			productReference = A1F9CCBFDA70214CC42355DA856951EC /* MSCircularSlider */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 7C1235D0BEEC3994E353A811E5BC58D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D503D860BBEBF5895CAEB10D66E1BDB0 /* MSCircularSlider */,
+				71D6D237C39E9596D0A1124BEB39F435 /* Pods-smartmug */,
+				0E3C90FA4BA3734C6858913FCD61B5E3 /* Pods-smartmug-smartmugUITests */,
+				77112F34D4A19AD6B109B722F5530A85 /* Pods-smartmugTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46DB3FCC232EA99FFA807AFE6F899E9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C23454D689887EF79F5B6D3C0D427960 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9ECEAF6243691E60A201F00321EA01C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF88B092E156FE04E1C5C909BD4689D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A15738AB428A9957A6F8949AC0F9234 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D02D61B04E334623D9E6509FE6C2E03 /* Pods-smartmugTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8E4B80EA5A4528024440C26F3AC64B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4090DB392D5E836359D2CA9FD75631F5 /* Pods-smartmug-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1AF8A7CA07DB65D41DC2B08D7C76D8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01EF2A69B23F98BC03834222327464B7 /* MSCircularSlider.swift in Sources */,
+				DF7A745AC2241A5C7B84B669A71B55D2 /* MSCircularSlider+IB.swift in Sources */,
+				AC6A8E3493077C9A0F9CE69D90C3ACA1 /* MSCircularSlider-dummy.m in Sources */,
+				640D7EEEC176546197B84F15560D7599 /* MSCircularSliderHandle.swift in Sources */,
+				1AA2887895072263C707496DAE845E13 /* MSDoubleHandleCircularSlider.swift in Sources */,
+				62E57F1EC3DFE24F7DFE31BF45129A8F /* MSDoubleHandleCircularSlider+IB.swift in Sources */,
+				8202E727A037E6516FB2540B2918367C /* MSGradientCircularSlider.swift in Sources */,
+				85523722632FC65D9F5AA4FFB80267DF /* MSGradientCircularSlider+IB.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE6BC5B4EA1B04DABD93485FA2D81858 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1BA3767AB4CCF967393B3509EFC8825 /* Pods-smartmug-smartmugUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1ECB4AE349DEF3ED633CDBD816F2AA22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MSCircularSlider;
+			target = D503D860BBEBF5895CAEB10D66E1BDB0 /* MSCircularSlider */;
+			targetProxy = 7E64133AB46883F3DF9623D1AE42B053 /* PBXContainerItemProxy */;
+		};
+		60E5479E7A7AA12FD8699824EF92D6C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-smartmug";
+			target = 71D6D237C39E9596D0A1124BEB39F435 /* Pods-smartmug */;
+			targetProxy = 7D9CA6B80EC95FA13BFB99371EBC8A3A /* PBXContainerItemProxy */;
+		};
+		BF985B528806DEBDF5DDF8037CA55AB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MSCircularSlider;
+			target = D503D860BBEBF5895CAEB10D66E1BDB0 /* MSCircularSlider */;
+			targetProxy = 88EA9344AC195E1A65C8D977773C0C41 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		17F73445705B489CC79557F6B268DFD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCFA78913290A1A179ADBE4BB4B68036 /* Pods-smartmugTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-smartmugTests/Pods-smartmugTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-smartmugTests/Pods-smartmugTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3C1FE9426E9106C09AAF52F579ECB4E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE71EDD5F6D9213152713DDF7FF344D0 /* MSCircularSlider.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MSCircularSlider/MSCircularSlider-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MSCircularSlider/MSCircularSlider-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MSCircularSlider/MSCircularSlider.modulemap";
+				PRODUCT_MODULE_NAME = MSCircularSlider;
+				PRODUCT_NAME = MSCircularSlider;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		639A167C7BA8BEC6225411BE447210DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49EA4C8A4DE4C789AA192362B98BBD4F /* Pods-smartmug.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-smartmug/Pods-smartmug-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-smartmug/Pods-smartmug.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DC38E952A7AA25191CAAD76CC936F0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADA57EB975427AF31983EDAC1D009EAB /* Pods-smartmugTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-smartmugTests/Pods-smartmugTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-smartmugTests/Pods-smartmugTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		97648340489CDFAB6D31BB34ED8A3A4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 047495B5EBE69DC701917010E837EC5A /* Pods-smartmug-smartmugUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-smartmug-smartmugUITests/Pods-smartmug-smartmugUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-smartmug-smartmugUITests/Pods-smartmug-smartmugUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9C6CD18E2B6EC7F852C4441BE1972078 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BFBC7EA648BE7EDFAE2CE96BEF31F0F /* Pods-smartmug-smartmugUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-smartmug-smartmugUITests/Pods-smartmug-smartmugUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-smartmug-smartmugUITests/Pods-smartmug-smartmugUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BC01E0B73776AF6B58DC318A9BE988D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C27CF8E83A5D193077A132BFFAC52ADD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FC5454D35942C53CA5431977527231B /* MSCircularSlider.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MSCircularSlider/MSCircularSlider-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MSCircularSlider/MSCircularSlider-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MSCircularSlider/MSCircularSlider.modulemap";
+				PRODUCT_MODULE_NAME = MSCircularSlider;
+				PRODUCT_NAME = MSCircularSlider;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C605C363CC9F26F9FF97DBB1D5C6E25C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		FA264D79F91B6C8A5F891381FE12EA18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CE9BD4A41286E120EF18081509F6FAE /* Pods-smartmug.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-smartmug/Pods-smartmug-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-smartmug/Pods-smartmug.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC01E0B73776AF6B58DC318A9BE988D7 /* Debug */,
+				C605C363CC9F26F9FF97DBB1D5C6E25C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82940DBA813DC0B653D4B2443ADEA609 /* Build configuration list for PBXNativeTarget "MSCircularSlider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C27CF8E83A5D193077A132BFFAC52ADD /* Debug */,
+				3C1FE9426E9106C09AAF52F579ECB4E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A36E13FD50385CBCB072BAF6D3DB3C42 /* Build configuration list for PBXNativeTarget "Pods-smartmug-smartmugUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97648340489CDFAB6D31BB34ED8A3A4A /* Debug */,
+				9C6CD18E2B6EC7F852C4441BE1972078 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B15FEB9BD33BA7DC9FF63CDD490F5E8B /* Build configuration list for PBXNativeTarget "Pods-smartmugTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17F73445705B489CC79557F6B268DFD3 /* Debug */,
+				8DC38E952A7AA25191CAAD76CC936F0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB021C18ADF5A629D33007E76E235881 /* Build configuration list for PBXNativeTarget "Pods-smartmug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA264D79F91B6C8A5F891381FE12EA18 /* Debug */,
+				639A167C7BA8BEC6225411BE447210DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
