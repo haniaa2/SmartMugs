@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Circular Temperature Slider</title>
+	<style>
+    
+    body {
+      background: linear-gradient(to bottom, #87CEFA, #00395c);
+    }
+    
+       
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			background-color: #f5f5f5;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+		.container {
+			position: relative;
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			background-color: #ddd;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.slider {
+			position: absolute;
+			top: 0;
+			left: calc(50% + 90px);
+      top: calc(50% - 15px);
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			background-color: #fff;
+			border: 1px solid #ccc;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+			transform: translate(-50%, -50%);
+			transition: all 0.2s ease;
+		}
+		.slider:hover {
+			background-color: #ccc;
+		}
+    .number {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+      font-weight: bold;
+      pointer-events: none;
+      user-select: none;
+    }
+    .app-title {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      color: #fff;
+      font-size: 50px;
+      font-weight: bold;
+    }
+
+    *
+{
+    user-select: none;  
+}
+
+html, body
+{
+    height: 100%;
+}
+
+body
+{
+    margin: 0;
+    background-color: #fff;
+}
+
+#toggle_checkbox
+{
+    display: none;
+}
+
+
+label {
+  display: block;
+  position: fixed;
+  bottom: 20px; /* adjust this value to move the switch up */
+  right: 0;
+  left: 0;
+  width: 116px;
+  height: 56px;
+  margin: 0 auto;
+  background-color: #77b5fe;
+  border-radius: 56px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: 0.3s ease background-color;
+  overflow: hidden;
+}
+
+
+#star
+{
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    width: 30px;
+    height: 30px;
+    background-color: #fafd0f;
+    transform: scale(1);
+    border-radius: 50%;
+    transition: 0.3s ease top, 0.3s ease left, 0.3s ease transform, 0.3s ease background-color;
+    z-index: 1;
+}
+
+#star-1
+{
+    position: relative;
+}
+
+#star-2
+{
+    position: absolute;
+    transform: rotateZ(36deg);
+}
+
+.star
+{
+    top: 0;
+    left: -7px;
+    font-size: 54px;
+    line-height: 28px;
+    color: #fafd0f;
+    transition: 0.3s ease color;
+}
+
+#moon
+{
+    position: absolute;
+    bottom: -52px;
+    right: 8px;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.3s ease bottom;
+}
+
+#moon:before
+{
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: -17px;
+    width: 40px;
+    height: 40px;
+    background-color:#03a9f4;
+    border-radius: 50%;
+    transition: 0.3s ease background-color;
+}
+
+#toggle_checkbox:checked + label
+{
+    background-color: #000;
+}
+
+#toggle_checkbox:checked + label #star
+{
+    top: 3px;
+    left: 64px;
+    transform: scale(0.3);
+    background-color: yellow;
+}
+
+#toggle_checkbox:checked + label .star
+{
+    color: yellow;
+}
+
+#toggle_checkbox:checked + label #moon
+{
+    bottom: 8px;
+}
+
+#toggle_checkbox:checked + label #moon:before
+{
+    background-color: #000;
+}
+    
+    
+    
+	</style>
+</head>
+<body>
+  <h1 class="app-title">Smart Mug App</h1>
+	<div class="container">
+		<div class="slider"></div>
+		<div class="number"></div>
+    <input type="checkbox" id="toggle_checkbox">
+
+
+
+<label for="toggle_checkbox">
+  <div id="star">
+    <div class="star" id="star-1">★</div>
+    <div class="star" id="star-2">★</div>
+  </div>
+  <div id="moon"></div>
+</label>
+    
+	</div>
+	<script>
+		const slider = document.querySelector('.slider');
+		const number = document.querySelector('.number');
+		const container = document.querySelector('.container');
+		const radius = container.clientWidth / 2;
+
+		function getDegrees(x, y) {
+			const centerX = container.offsetLeft + radius;
+			const centerY = container.offsetTop + radius;
+			const deltaX = x - centerX;
+			const deltaY = y - centerY;
+			const radians = Math.atan2(deltaY, deltaX);
+			let degrees = radians * 180 / Math.PI;
+			if (degrees < 0) {
+				degrees += 360;
+			}
+			return degrees;
+		}
+
+		function updateNumber(degrees) {
+      const temperature = Math.round(degrees / 360 * 60 + 20);
+
+			number.innerHTML = temperature + "°C";
+		}
+
+    function updateSlider(x, y) {
+      const degrees = getDegrees(x, y);
+      const x1 = radius + Math.cos(degrees / 180 * Math.PI) * radius;
+      const y1 = radius + Math.sin(degrees / 180 * Math.PI) * radius;
+      
+      // Calculate the distance from the center of the circle to the slider
+      const distance = Math.sqrt(Math.pow(x1 - radius, 2) + Math.pow(y1 - radius, 2));
+      
+      // If the distance is greater than the radius, adjust the position of the slider
+      if (distance > radius) {
+        const angle = Math.atan2(y1 - radius, x1 - radius);
+        x1 = radius + Math.cos(angle) * radius;
+        y1 = radius + Math.sin(angle) * radius;
+      }
+      
+      slider.style.left = x1 + "px";
+      slider.style.top = y1 + "px";
+      updateNumber(degrees);
+    }
+    
+
+		container.addEventListener('mousedown', function(e) {
+			updateSlider(e.clientX, e.clientY);
+			document.addEventListener('mousemove', onMouseMove);
+			document.addEventListener('mouseup', onMouseUp);
+		});
+
+		function onMouseMove(e) {
+			updateSlider(e.clientX, e.clientY);
+		}
+
+		function onMouseUp() {
+			document.removeEventListener('mousemove', onMouseMove);
+			document.removeEventListener('mouseup', onMouseUp);
+		}
+    window.onload = function() {
+      updateSlider(container.offsetLeft + radius, container.offsetTop);
+
+    };
+
+
+    ///you need to add an event listener to the switch element that will send a signal to the microcontroller via BLE
+    
+	</script>
+</body>
+</html>
