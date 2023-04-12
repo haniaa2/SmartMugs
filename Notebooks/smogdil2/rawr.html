@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Circular Temperature Slider</title>
+	<style>
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			background-color: #f5f5f5;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+		.container {
+			position: relative;
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			background-color: #ddd;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.slider {
+			position: absolute;
+			top: 0;
+			left: 100%;
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			background-color: #fff;
+			border: 1px solid #ccc;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+			transform: translate(-50%, -50%);
+			transition: all 0.2s ease;
+		}
+		.slider:hover {
+			background-color: #ccc;
+		}
+		.number {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 24px;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="slider"></div>
+		<div class="number"></div>
+	</div>
+	<script>
+		const slider = document.querySelector('.slider');
+		const number = document.querySelector('.number');
+		const container = document.querySelector('.container');
+		const radius = container.clientWidth / 2;
+
+		function getDegrees(x, y) {
+			const centerX = container.offsetLeft + radius;
+			const centerY = container.offsetTop + radius;
+			const deltaX = x - centerX;
+			const deltaY = y - centerY;
+			const radians = Math.atan2(deltaY, deltaX);
+			let degrees = radians * 180 / Math.PI;
+			if (degrees < 0) {
+				degrees += 360;
+			}
+			return degrees;
+		}
+
+		function updateNumber(degrees) {
+			const temperature = Math.round(degrees / 360 * 100);
+			number.innerHTML = temperature + "°";
+		}
+
+    function updateSlider(x, y) {
+      const degrees = getDegrees(x, y);
+      const x1 = radius + Math.cos(degrees / 180 * Math.PI) * radius;
+      const y1 = radius + Math.sin(degrees / 180 * Math.PI) * radius;
+      
+      // Calculate the distance from the center of the circle to the slider
+      const distance = Math.sqrt(Math.pow(x1 - radius, 2) + Math.pow(y1 - radius, 2));
+      
+      // If the distance is greater than the radius, adjust the position of the slider
+      if (distance > radius) {
+        const angle = Math.atan2(y1 - radius, x1 - radius);
+        x1 = radius + Math.cos(angle) * radius;
+        y1 = radius + Math.sin(angle) * radius;
+      }
+      
+      slider.style.left = x1 + "px";
+      slider.style.top = y1 + "px";
+      updateNumber(degrees);
+    }
+    
+
+		container.addEventListener('mousedown', function(e) {
+			updateSlider(e.clientX, e.clientY);
+			document.addEventListener('mousemove', onMouseMove);
+			document.addEventListener('mouseup', onMouseUp);
+		});
+
+		function onMouseMove(e) {
+			updateSlider(e.clientX, e.clientY);
+		}
+
+		function onMouseUp() {
+			document.removeEventListener('mousemove', onMouseMove);
+			document.removeEventListener('mouseup', onMouseUp);
+		}
+	</script>
+</body>
+</html>
