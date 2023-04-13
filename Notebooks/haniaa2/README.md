@@ -9,7 +9,7 @@
 ![RT1650-compliant Qi Reciver](./figures/RT1650-compliant-QiReciever-02-17-2023.png)
 
 # Week 2/20  
-- Finalized desinged document
+- Finalized design document
 
 # Week 2/27  
 - 02/28/2023: Design Review with Prof. Mironenko was conducted.
