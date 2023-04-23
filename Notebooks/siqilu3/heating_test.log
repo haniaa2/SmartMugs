@@ -1,0 +1,21 @@
+Circuit: * C:\Users\vicky\Desktop\2023Spring\ECE 445\heating_test.asc
+
+Direct Newton iteration for .op point succeeded.
+
+Date: Sat Apr 22 22:13:12 2023
+Total elapsed time: 0.140 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2087
+traniter = 2082
+tranpoints = 1042
+accept = 1042
+rejected = 0
+matrix size = 10
+fillins = 0
+solver = Normal
+Matrix Compiler1:      25 opcodes  0.2/[0.1]/0.1
+Matrix Compiler2: off  [0.1]/0.1/0.2
+
