@@ -29,4 +29,5 @@
 
 # Week 04/24
 - Mock presentation slides making and script writing.
+- 4/29: Me and Srishti met in the morning and finish most of the integration. The MOSFET we need to use for the heating system is not arrived yet. The temperature sensor works perfectly can display temp through the serial monitor. The esp32 sucessfully received user input temp from the designed web and compare it with the sensed temp. The LED was turned on sucessfully when the user temp is higher than the sensed temp.
 
