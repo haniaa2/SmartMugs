@@ -35,6 +35,6 @@
 # Week 05/01
 - 5/1: Final Presentation on May 1st, 8:30am. I think we did a pretty good job in presenting.
 - 5/2: Whole breadboard circuit is completed (YES!!!).
--- I obtained some data and pictures that can verify the functionality of the circuit.  The only unfortunate thing left is that our heating element are too small to heat up a cup of water quickly and the sensor was exposed to a open environment which may caused some errors when detected temperatures. 
--- I also added the RGB LED system to the whole design which was one of our original expectation. 
--- Although the battery we used had some trouble powering the heating element (may solved by charging it), we eventually used a power source which can provided both 5V and 3.3V voltage to power the heating element with the IRIB8721 n-channel MOSFET. The heating element is now successfully integrated to the main system.
+-      I obtained some data and pictures that can verify the functionality of the circuit.  The only unfortunate thing left is that our heating element are too small to heat up a cup of water quickly and the sensor was exposed to a open environment which may caused some errors when detected temperatures. 
+-      I also added the RGB LED system to the whole design which was one of our original expectation. 
+-      Although the battery we used had some trouble powering the heating element (may solved by charging it), we eventually used a power source which can provided both 5V and 3.3V voltage to power the heating element with the IRIB8721 n-channel MOSFET. The heating element is now successfully integrated to the main system.
