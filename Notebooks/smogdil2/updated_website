@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Circular Temperature Slider</title>
+  <div class="title">
+    <h1>The Smart Mug</h1>
+  </div>
+  
+
+ 
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+
+	<style>
+    
+    .title {
+      text-align: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+    
+    h1 {
+      font-size: 3em;
+      color: black;
+    }
+    
+    body {
+      background: linear-gradient(to bottom, #87CEFA, #00395c);
+    }
+    
+       
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			background-color: #f5f5f5;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+		.container {
+			position: relative;
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			background-color: #ddd;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.slider {
+			position: absolute;
+			top: 0;
+			left: calc(50% + 90px);
+      top: calc(50% - 15px);
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			background-color: #fff;
+			border: 1px solid #ccc;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+			transform: translate(-50%, -50%);
+			transition: all 0.2s ease;
+		}
+		.slider:hover {
+			background-color: #ccc;
+		}
+    .number {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+      font-weight: bold;
+      pointer-events: none;
+      user-select: none;
+    }
+    .app-title {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      color: #fff;
+      font-size: 50px;
+      font-weight: bold;
+    }
+
+    *
+{
+    user-select: none;  
+}
+
+html, body
+{
+    height: 100%;
+}
+
+body
+{
+    margin: 0;
+    background-color: #fff;
+}
+
+#toggle_checkbox
+{
+    display: none;
+}
+
+
+label {
+  display: block;
+  position: fixed;
+  bottom: 20px; /* adjust this value to move the switch up */
+  right: 0;
+  left: 0;
+  width: 116px;
+  height: 56px;
+  margin: 0 auto;
+  background-color: #77b5fe;
+  border-radius: 56px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: 0.3s ease background-color;
+  overflow: hidden;
+}
+
+
+    
+	</style>
+</head>
+<body>
+  
+
+
+
+
+</label>
+    
+	</div>
+  <div>
+    <label for="temperature-value">Temperature (°C):</label>
+
+   <input type="number" id="targetTemperature" placeholder="Enter target temperature"> 
+
+
+
+    
+</div>
+<button type="button" onclick="submitTemperature()">Set Temperature</button>
+<button id="powerButton" onclick="togglePower()">Turn On/Off</button>
+
+
+	<script>
+		const slider = document.querySelector('.slider');
+		const number = document.querySelector('.number');
+		const container = document.querySelector('.container');
+		const radius = container.clientWidth / 2;
+
+		function getDegrees(x, y) {
+			const centerX = container.offsetLeft + radius;
+			const centerY = container.offsetTop + radius;
+			const deltaX = x - centerX;
+			const deltaY = y - centerY;
+			const radians = Math.atan2(deltaY, deltaX);
+			let degrees = radians * 180 / Math.PI;
+			if (degrees < 0) {
+				degrees += 360;
+			}
+			return degrees;
+		}
+
+		function updateNumber(degrees) {
+      
+
+			number.innerHTML = temperature + "°C";
+		}
+
+    function updateSlider(x, y) {
+      const degrees = getDegrees(x, y);
+      const x1 = radius + Math.cos(degrees / 180 * Math.PI) * radius;
+      const y1 = radius + Math.sin(degrees / 180 * Math.PI) * radius;
+      
+      
+      
+      // If the distance is greater than the radius, adjust the position of the slider
+      if (distance > radius) {
+        const angle = Math.atan2(y1 - radius, x1 - radius);
+        x1 = radius + Math.cos(angle) * radius;
+        y1 = radius + Math.sin(angle) * radius;
+      }
+      
+      slider.style.left = x1 + "px";
+      slider.style.top = y1 + "px";
+      updateNumber(degrees);
+    }
+    
+
+		container.addEventListener('mousedown', function(e) {
+			updateSlider(e.clientX, e.clientY);
+			document.addEventListener('mousemove', onMouseMove);
+			document.addEventListener('mouseup', onMouseUp);
+		});
+
+		function onMouseMove(e) {
+			updateSlider(e.clientX, e.clientY);
+		}
+
+		function onMouseUp() {
+			document.removeEventListener('mousemove', onMouseMove);
+			document.removeEventListener('mouseup', onMouseUp);
+		}
+    window.onload = function() {
+      updateSlider(container.offsetLeft + radius, container.offsetTop);
+
+    };
+    
+
+
+    ///you need to add an event listener to the switch element that will send a signal to the microcontroller via BLE
+
+	</script>
+  <script>
+    
+      // Replace these values with your Firebase project configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyBClkx5vlkK2SuUz-EVhwEJsTPKAscR74U",
+        authDomain: "martmug-2d912.firebaseapp.com",
+        projectId: "smartmug-2d912",
+        storageBucket: "smartmug-2d912.appspot.com",
+        messagingSenderId: "839878024131",
+        appId: "1:839878024131:web:89a8fb77ca9fdabedefb76",
+        databaseURL: "https://smartmug-2d912-default-rtdb.firebaseio.com"
+      };
+      
+  
+      // Initialize Firebase
+      const app = firebase.initializeApp(firebaseConfig);
+      const db = firebase.database(app);
+   
+
+      function submitTemperature() {
+        
+        console.log("submitTemperature() called");
+        let targetTemperature = parseFloat(document.getElementById("targetTemperature").value);
+        if (isNaN(targetTemperature)) {
+          alert("Please enter a valid temperature.");
+          return;
+        }
+        firebase.database().ref("test/temperature").set(targetTemperature).then(() => {
+          alert("Temperature set successfully.");
+        }).catch((error) => {
+          console.error("Error setting temperature:", error);
+          alert("Error setting temperature. Check the console for details.");
+        });
+      }
+      
+  
+      function updateTemperature() {
+          const temperatureValue = document.getElementById("temperature-value").value;
+          if (temperatureValue) {
+              // Update the temperature value in the Realtime Database
+              db.ref("/temperature").set(parseInt(temperatureValue));
+          }
+      }
+      function togglePower() {
+        // Get a reference to the database
+        var database = firebase.database();
+      
+        // Get the current power status from the database
+        var powerRef = database.ref("test/power");
+        powerRef.once("value", function(snapshot) {
+          var power = snapshot.val();
+      
+          // Toggle the power status
+          power = !power;
+      
+          // Update the power status in the database
+          powerRef.set(power);
+        });
+      }
+      
+  </script>
+  
+
+
+
+</body>
+</html>
