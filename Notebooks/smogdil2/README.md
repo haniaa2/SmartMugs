@@ -23,32 +23,53 @@
 
 # Week 03/13
 
-- Created the app layout for the front page<img width="242" alt="Screen Shot 2023-05-04 at 1 34 58 PM" src="https://user-images.githubusercontent.com/113563566/236297326-fdc86ace-691c-4df7-816a-afc971118080.png">
- :
+- Created the app layout for the front page using uizard
 
 
+<img width="242" alt="Screen Shot 2023-05-04 at 1 34 58 PM" src="https://user-images.githubusercontent.com/113563566/236297326-fdc86ace-691c-4df7-816a-afc971118080.png">
+ 
 
 # Week 03/20
+- created the lay out for more of the pages of the app :
+
+<img width="218" alt="Screen Shot 2023-05-04 at 1 36 01 PM" src="https://user-images.githubusercontent.com/113563566/236297551-229f8051-5338-4d74-bc08-20933d764adc.png">
+
+<img width="244" alt="Screen Shot 2023-05-04 at 1 38 08 PM" src="https://user-images.githubusercontent.com/113563566/236297966-4af12ad1-bb2a-40f8-88f6-950ae4b8743f.png">
+
 
 # Week 03/27
+- finished the lay out for all the pages of the app :
+ <img width="289" alt="Screen Shot 2023-05-04 at 1 38 23 PM" src="https://user-images.githubusercontent.com/113563566/236298019-bd794a9b-bb92-4f16-9aa5-56c05090538c.png">
+ - submitted my individual progress report  
 
 # Week 04/03
+- created the ios app using swift
+
+ <img width="339" alt="Screen Shot 2023-05-04 at 1 44 54 PM" src="https://user-images.githubusercontent.com/113563566/236299450-5d73d4b4-903f-4384-9580-eddc9dd1400b.png">
+ 
+ - had meeting with my team and TA and decided to chnage the IOS app to a web app 
+ 
 
 # Week 04/10
 
+- created the whole front end of the web app :
+
+<img width="1333" alt="Screen Shot 2023-05-04 at 1 48 50 PM" src="https://user-images.githubusercontent.com/113563566/236300225-f11ee357-790e-4b49-84c6-976de4f55148.png">
+
 # Week 04/17
 - Building the circuit on the breadboard using the ESP32 Dev Board.
-- 4/22: Demonstration the functionality of the circuit. Unfortunately the ESP32 Dev Board broke during our process of testing, we purchased the board immediately but shipping may take long. 
-- 4/23: Testing and building the heating and sensor subsystem seperately in order to meet some expectation to those subsystems. A new dev board is considered to apply for demonstration.
+- 4/22: Demonstration the functionality of the circuit.  ESP32 Dev Board broke during our process of testing, we purchased the board immediately 
+- 4/23: Connected the web app to ES8266. And connected ESP8266 to firebase real-time database 
+- Test app with microcontoller, worked prefectly but not integreated with the heating system
 
 # Week 04/24
 - Mock presentation slides making and script writing.
-- 4/29: Me and Srishti met in the morning and finish most of the integration. The MOSFET we need to use for the heating system is not arrived yet. The temperature sensor works perfectly can display temp through the serial monitor. The esp32 sucessfully received user input temp from the designed web and compare it with the sensed temp. The LED was turned on sucessfully when the user temp is higher than the sensed temp.
-- 4/30: Final prensentation preparation. Me and Srishti also took some pictures and videos about what we go for the circuit so far. 
+- 4/29: Siqi and I met in the morning and finish most of the integration. Got the ESP32 and ingreated it with the web app and sensors and heating element 
+- 4/30: Final prensentation preparation. Siqi and I took pictures and videos about what we go for the circuit so far. 
+- FInished the slides for the presentation 
 
 # Week 05/01
-- 5/1: Final Presentation on May 1st, 8:30am. I think we did a pretty good job in presenting.
-- 5/2: Whole breadboard circuit is completed (YES!!!).  
-I obtained some data and pictures that can verify the functionality of the circuit. The only unfortunate thing left is that our heating element are too small to heat up a cup of water quickly and the sensor was exposed to a open environment which may caused some errors when detected temperatures.  
-I also added the RGB LED system to the whole design which was one of our original expectation.  
-Although the battery we used had some trouble powering the heating element (may solved by charging it), we eventually used a power source which can provided both 5V and 3.3V voltage to power the heating element with the IRIB8721 n-channel MOSFET. The heating element is now successfully integrated to the main system.
+- 5/1: Final Presentation on May 1st, 8:30am. Presentation went very well
+- 5/2: Whole breadboard circuit is completed  
+- 5/3: Second Final Demo: Systems were integreated perfectly. Went very well. 
+
