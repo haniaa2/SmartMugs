@@ -19,10 +19,13 @@
 # Week 03/06
 - assigned roles to everyone 
 - did some reaseach on how to build an app 
+- deciced to build and IOS app 
 
 # Week 03/13
 
-- Created the app layout for the front page :
+- Created the app layout for the front page<img width="242" alt="Screen Shot 2023-05-04 at 1 34 58 PM" src="https://user-images.githubusercontent.com/113563566/236297326-fdc86ace-691c-4df7-816a-afc971118080.png">
+ :
+
 
 
 # Week 03/20
