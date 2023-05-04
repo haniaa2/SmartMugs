@@ -6,13 +6,17 @@
 - Initial Project Proposal Finalized
 
 # Week 02/13
-
+- Researching the design of our smart mugs.
 
 # Week 02/20
+- Design document original version completed.
+- We updated our proposal this week as well.
 
 # Week 03/06
+-We met with the professor and TAs to discuss our design document and our project. They gave us some valuable suggestions.
 
 # Week 03/13
+
 
 # Week 03/20
 
