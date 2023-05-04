@@ -20,6 +20,12 @@
 
 # Week 03/20
 - This week we are focusing on completing the schematics and pcb design. I designed the heating, sensor and LED module and write the basic code for them.
+![heating_sch](https://user-images.githubusercontent.com/106114777/236340469-6a2c0830-6d8d-444f-b7e8-9f9180dd0c5f.png)
+![LED_sch](https://user-images.githubusercontent.com/106114777/236340911-590f8080-4ea1-407d-a75f-03cc7506315e.png)
+![Sensor_sch](https://user-images.githubusercontent.com/106114777/236340922-9278431a-11c8-45f5-bc59-2a2e5048be11.png)
+- I also did some circuirt simulation for the design
+![heating_test_1](https://user-images.githubusercontent.com/106114777/236341374-86aae0ff-26c1-4baa-9b91-6b64b6c68b38.png)
+![heating_test_2](https://user-images.githubusercontent.com/106114777/236341387-655011ca-8085-434a-a259-6c45274c0fe8.png)
 
 # Week 03/27
 - I ordered the PCB and other part. It will arrive in a week.
@@ -44,8 +50,12 @@
 # Week 05/01
 - 5/1: Final Presentation on May 1st, 8:30am. I think we did a pretty good job in presenting.
 - 5/2: Whole breadboard circuit is completed (YES!!!).  
-
+![IMG_4990](https://user-images.githubusercontent.com/106114777/236340328-50a4f610-4f81-47f2-9c11-6fe5d38e9deb.jpg)
 I obtained some data and pictures that can verify the functionality of the circuit. The only unfortunate thing left is that our heating element are too small to heat up a cup of water quickly and the sensor was exposed to a open environment which may caused some errors when detected temperatures.  
+![voltage_verification_1](https://user-images.githubusercontent.com/106114777/236341431-8eb669f6-62b7-4cfa-aee2-05019d4ccafe.png)
+![voltage_verification_2](https://user-images.githubusercontent.com/106114777/236341487-28389bea-e39a-4774-8db6-91ab408ea812.png)
+![sensor_verification](https://user-images.githubusercontent.com/106114777/236341782-4a4d6724-30eb-49b6-8195-5b8e8054096a.png)
 I also added the RGB LED system to the whole design which was one of our original expectation.  
 Although the battery we used had some trouble powering the heating element (may solved by charging it), we eventually used a power source which can provided both 5V and 3.3V voltage to power the heating element with the IRIB8721 n-channel MOSFET. The heating element is now successfully integrated to the main system.
 - 5/3: We had our second final demo on 9am and it went really good! 
+- 5/4: Checked out everything and finished this notes. This class is officially over!
