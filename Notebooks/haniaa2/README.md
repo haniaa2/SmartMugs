@@ -42,7 +42,7 @@
 - 04/19/2023: We had a meeting with Selva and chose to go with demoing on a breadboard instead since the PCB will take more time to solder and test. 
 
 # Week 4/17
-- 04/21/2023: Programmed the ESP32 DevKit to interface with my real-time database through a Google Firebase instance through a Wi-Fi client connection.
+- 04/21/2023: Programmed the ESP32 DevKit to interface with my real-time database through a Google Firebase instance with a Wi-Fi client connection.
 - 04/22/2023: The ESP32 was burnt due to connecting it with unprotected power circuitry.
 - 04/23/2023: I got a spare ESP8266 in lieu of the ESP32 and decided to use that for our demo on Monday.
 - I left Srishti with the MCU to integrate the Wi-Fi iterface with her frontend. 
