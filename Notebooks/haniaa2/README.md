@@ -35,3 +35,27 @@
 ![MCU Programmer](./figures/mcu-programmer-03-25-2023.png)
 ![PCB Layout](./figures/pcb-v1-03-26-2023.png)
 
+# Week 4/3
+- Siqi handled PCB soldering with me having supervisory role.  
+
+# Week 4/10
+- 04/19/2023: We had a meeting with Selva and chose to go with demoing on a breadboard instead since the PCB will take more time to solder and test. 
+
+# Week 4/17
+- 04/21/2023: Programmed the ESP32 DevKit to interface with my real-time database through a Google Firebase instance through a Wi-Fi client connection.
+- 04/22/2023: The ESP32 was burnt due to connecting it with unprotected power circuitry.
+- 04/23/2023: I got a spare ESP8266 in lieu of the ESP32 and decided to use that for our demo on Monday.
+- I left Srishti with the MCU to integrate the Wi-Fi iterface with her frontend. 
+
+# Week 4/24
+- To balance out our work, I left Siqi and Srishti to do the full integration of the microcontroller unit with the circuit on the breadboard instead of having multiple MCUs. 
+- Siqi will handle the heating element integration with a MOSFET that satisfies the specifications and requirements of our design. 
+
+# Week 5/1
+ - Working on the final report.
+ - 05/01/2023: We had our final presentaion.
+ - 05/03/2023: We had our final demo and submitted the final report!
+![Final Block Diagram](./figures/final-block-diagram-05-03-2023.png)
+
+
+
