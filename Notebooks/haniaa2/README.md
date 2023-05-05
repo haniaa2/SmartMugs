@@ -1,4 +1,4 @@
-# Hani's Worklog
+# ECE445 **Hani Al Majed** Notebook
 
 # Week 2/6  
 - Researched the power subsystem of commercially available products (the Ember Mug primarily).   
@@ -52,6 +52,10 @@
 - Siqi will handle the heating element integration with a MOSFET that satisfies the specifications and requirements of our design. 
 
 # Week 5/1
+ - Collected further voltage traces of the Qi charger transmitter and the power management system to add them to the design verification section of the final report.
+![Final Block Diagram](./figures/qi_trans_vtrace-05-03-2023.jpg)
+![Final Block Diagram](./figures/power_management_vtrace-05-03-2023.jpg)
+
  - Working on the final report.
  - 05/01/2023: We had our final presentaion.
  - 05/03/2023: We had our final demo and submitted the final report!
